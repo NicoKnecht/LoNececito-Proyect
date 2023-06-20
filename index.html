@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/GralStyles.css">
+    <link rel="stylesheet" href="css/sections/index.css">
+    <title>Lo Necesito Home</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+
+            <a href="index.html" class="headerLogo__link"> <img src="img/logos/LOGO-NEGRO.png" alt="logo lo necesito"
+                    class="headerLogo__img">
+            </a>
+
+            <input class="header__search" type="text" id="search" name="search" placeholder="Buscar artículo" required>
+
+            <div class="header__menuIcons menuIcons">
+                <a href="#" class="menuIcons__link">
+                    <img src="img/iconos/favoritos.png" alt="favoritos" class="menuIcons__img">
+                </a>
+                <a href="#" class="menuIcons__link">
+                    <img src="img/iconos/notificacion.png" alt="notificaciones" class="menuIcons__img">
+                </a>
+                <a href="#" class="menuIcons__link">
+                    <img src="img/iconos/carrito-de-compras.png" alt="carrito" class="menuIcons__img">
+                </a>
+                <a href="#" class="menuIcons__link">
+                    <img src="img/iconos/user.png" alt="usuario" class="menuIcons__img">
+                </a>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav__wrapper">
+                <li class="nav__item">
+                    <a href="landings/hogar.html" class="nav__link">HOGAR</a>
+
+                </li>
+                <li class="nav__item">
+                    <a href="landings/cocina.html" class="nav__link">COCINA</a>
+                </li>
+                <li class="nav__item">
+                    <a href="landings/electro.html" class="nav__link">ELECTRO</a>
+                </li>
+                <li class="nav__item">
+                    <a href="landings/beauty.html" class="nav__link">BEAUTY</a>
+                </li>
+                <li class="nav__item">
+                    <a href="landings/pasatiempos.html" class="nav__link">PASATIEMPOS</a>
+                </li>
+                <li class="nav__item">
+                    <a href="landings/sale.html" class="nav__link">OFERTAS</a>
+                </li>
+                <li class="nav__item nav__item--separate">
+                    <a href="landings/contact.html" class="nav__link">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+    <main class="main">
+        <section class="main__hero">
+            <img src="img/banners/BANNER-MAIN.png" alt="banner main descuentos" class="main__hero__img">
+        </section>
+        <section class="main__faq">
+            <a href="#" class="main__faq__link">
+                <img src="img/iconos/envio.png" alt="envio" class="main__faq__img">
+            </a>
+            <a href="#" class="main__faq__link">
+                <img src="img/iconos/pagoTarjeta.png" alt="pago tarjetas" class="main__faq__img">
+            </a></img>
+            <a href="#" class="main__faq__link">
+                <img src="img/iconos/preguntasFrecuentes.png" alt="faq" class="main__faq__img">
+            </a>
+        </section>
+        <section class="main__sale sale">
+            <h2 class="sale__title">OFERTAS</h2>
+            <div class="cards">
+                <article class=" cards__card card">
+                    <img src="img/productos/auriculares/auriculares-inalambricos-1.jpg" alt="auriculares">
+                    <h2 class="card__title">Auriculares Inalambricos</h2>
+                    <p class="card__price">$6000</p>
+                    <button class="card_button">comprar</button>
+                </article>
+                <article class="card">
+                    <img src="img/productos/sacacorcho-auto/sacacorcho electrico 1.jpg" alt="sacacorcho">
+                    <h2 class="card__title">Saca Corcho Eléctrico</h2>
+                    <p class="card__price">$2000</p>
+                    <button class="card_button">comprar</button>
+                </article>
+                <article class="card">
+                    <img src="img/productos/tazaTermica/taza termica 1.jpg" alt="taza termica">
+                    <h2 class="card__title">Nombre producto</h2>
+                    <p class="card__price">$2200</p>
+                    <button class="card_button">comprar</button>
+                </article>
+                <article class="card">
+                    <img src="img/productos/portaCepilloEsterilizador/porta cepillo 1.jpg"
+                        alt="porta cepillo de dientes esterilizador">
+                    <h2 class="card__title">Porta Cepillos Esterilizador</h2>
+                    <p class="card__price">$1800</p>
+                    <button class="card_button">comprar</button>
+                </article>
+            </div>
+        </section>
+        <section class="bestSellers">
+            <h2 class="bestSellers__title">Mas Vendidos</h2>
+            <div class="cards">
+                <article class=" cards__card card">
+                    <img src="img/productos/ledColores/tira led 1.jpg" alt="tiras luz led">
+                    <h2 class="card__title">Tira de Luz Led</h2>
+                    <p class="card__price">$3200</p>
+                    <button class="card_button">comprar</button>
+                </article>
+                <article class="card">
+                    <img src="img/productos/limpiadorFacial/limpiador facial 1.jpg" alt="Limpiador Facial">
+                    <h2 class="card__title">Limpiador Facial</h2>
+                    <p class="card__price">$5500</p>
+                    <button class="card_button">comprar</button>
+                </article>
+                <article class="card">
+                    <img src="img/productos/trapeadorSpray/trapeador dispen 1.jpg" alt="Trapeador Spray">
+                    <h2 class="card__title">Trapeador Spray</h2>
+                    <p class="card__price">$2500</p>
+                    <button class="card_button">comprar</button>
+                </article>
+                <article class="card">
+                    <img src="img/productos/masajeador/masajeador 1.jpg" alt="Masajeador">
+                    <h2 class="card__title">Masajeador Eléctrico</h2>
+                    <p class="card__price">$10000</p>
+                    <button class="card_button">comprar</button>
+                </article>
+            </div>
+        </section>
+
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__logo logo">
+            <img src="img/logos/logo sin fondo para negro.png" alt="logo lo necesito" class="logo__img"><a
+                href="index.html" class="logo__link"></a></img>
+        </div>
+        <nav class="footer__nav nav">
+            <ul class="nav__items ">
+                <li class="nav__item">
+                    <a href="landings/hogar.html" class="nav__link" target="_blank">HOGAR</a>
+                </li>
+                <li class="nav__item">
+                    <a href="landings/cocina.html" class="nav__link" target="_blank">COCINA</a>
+                </li>
+                <li class="nav__item">
+                    <a href="landings/electro.html" class="nav__link" target="_blank">ELECTRO</a>
+                </li>
+                <li class="nav__item">
+                    <a href="landings/beauty.html" class="nav__link" target="_blank">BEAUTY</a>
+                </li>
+                <li class="nav__item">
+                    <a href="landings/pasatiempos.html" class="nav__link" target="_blank">PASATIEMPOS</a>
+                </li>
+                <li class="nav__item">
+                    <a href="landings/sale.html" class="nav__link" target="_blank">OFERTAS</a>
+                </li>
+                <li class="nav__item">
+                    <a href="landings/contact.html" class="nav__link" target="_blank">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="footer__contacts contacts">
+            <div class="contacts__address">
+                <img src="img/iconos/mapa.png" alt="direccion" class="directionImg">
+                <p class="address">Calle falsa 123</p>
+            </div>
+            <div class="footer__media media">
+                <a href="https://www.facebook.com/" class="media__link">
+                    <img src="img/iconos/facebook.png" alt="facebook" class="media__img">
+                </a>
+                <a href="https://www.instagram.com/" class="media__link">
+                    <img src="img/iconos/instagram.png" alt="" class="media__img">
+                </a>
+                <a href="https://www.youtube.com/" class="media__link">
+                    <img src="img/iconos/youtube.png" alt="" class="media__img">
+                </a>
+            </div>
+        </section>
+    </footer> -->
+</body>
+
+
+</html>
