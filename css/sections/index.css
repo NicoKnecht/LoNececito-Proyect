@@ -1,92 +1,115 @@
-body {
-    background: rgb(91, 104, 218);
-    background: linear-gradient(
-        175deg,
-        rgba(91, 104, 218, 1) 6%,
-        rgba(159, 14, 213, 1) 59%,
-        rgba(221, 12, 117, 1) 100%
-    );
-    height: 100vh;
-}
-
 /*HEADER*/
 
-/*Header logo-search-icons*/
-.header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-}
-
-.headerLogo__link {
-    display: flex;
-    width: 12%;
-}
-.headerLogo__img {
-    width: 100%;
-}
-
-.header__search {
-    width: 50%;
-    height: 4.5rem;
-    border: 2px black solid;
-    border-radius: 5px;
-    font-size: 2rem;
-    padding-left: 1%;
-}
-
-.header__menuIcons {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    width: 35%;
-}
-
-.menuIcons__link {
-    display: block;
-    width: 8%;
-}
-
-.menuIcons__img {
-    width: 100%;
-}
-
-/*HEADER nav*/
-
-.nav {
-    background-color: var(--main-black);
-}
-
-.nav__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3%;
-    padding: 1.6rem 0rem 1.6rem 0rem;
-}
-
-.nav__items {
-}
-
-.nav__item--separate {
-    border: 1.5px solid white;
-    border-radius: 10px;
-    padding: 0.5rem;
-}
-.nav__link {
-    color: white;
-    font-size: 1.4vw;
-}
 /*MAIN*/
 
-/*baner main*/
+.hero {
+}
+
+/*hero*/
+.hero__img {
+    width: 100%;
+}
 
 /*dudas frecuentes*/
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-color: white;
+}
+.faq__link {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 0px;
+}
 
+.faq__img {
+    width: 50%;
+}
+.faq__text {
+    font-size: 1vw;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 0.5%;
+    overflow: visible;
+}
 /*productos*/
 
 /*ofertas*/
+
+.sale {
+    margin-top: 3%;
+}
+.sale__title {
+    font-size: 2.3rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    text-shadow: 1px 4px 2px rgba(219, 215, 215, 0.6);
+}
+.sale__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1%;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: -2px 0px 14px 2px rgba(0, 0, 0, 0.54);
+    background-color: white;
+    width: 20%;
+}
+
+.card__img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card__title {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1.5rem 0rem;
+}
+.card__price {
+    font-size: 1.2em;
+    padding: 0.5rem 0rem;
+}
+.card__button {
+    color: white;
+    background-color: black;
+    margin: 2rem 0rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 80%;
+    cursor: pointer;
+}
+
+.bestSellers {
+    margin-top: 3%;
+}
+
+.bestSellers__title {
+    font-size: 2.3rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    text-shadow: 1px 4px 2px rgba(219, 215, 215, 0.6);
+}
+
+.bestSellers__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1%;
+}
 
 /*FOOTER*/
 

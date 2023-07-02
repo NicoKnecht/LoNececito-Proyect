@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/GralStyles.css">
     <link rel="stylesheet" href="css/sections/index.css">
+    <link rel="stylesheet" href="css/GralHeaderMenu.css">
     <title>Lo Necesito Home</title>
 </head>
 
@@ -41,7 +41,6 @@
             <ul class="nav__wrapper">
                 <li class="nav__item">
                     <a href="landings/hogar.html" class="nav__link">HOGAR</a>
-
                 </li>
                 <li class="nav__item">
                     <a href="landings/cocina.html" class="nav__link">COCINA</a>
@@ -61,82 +60,107 @@
                 <li class="nav__item nav__item--separate">
                     <a href="landings/contact.html" class="nav__link">CONTACTO</a>
                 </li>
+                <li class="nav__item nav__item--separate">
+                    <a href="/landings/aboutUs.html" class="nav__link">NOSOTROS</a>
+                </li>
             </ul>
+
         </nav>
     </header>
 
-    <!--
+
     <main class="main">
-        <section class="main__hero">
-            <img src="img/banners/BANNER-MAIN.png" alt="banner main descuentos" class="main__hero__img">
+        <section class="hero">
+            <img src="img/banners/BANNER-MAIN.png" alt="banner main descuentos" class="hero__img">
         </section>
-        <section class="main__faq">
-            <a href="#" class="main__faq__link">
-                <img src="img/iconos/envio.png" alt="envio" class="main__faq__img">
+        <section class="faq">
+            <a href="#" class="faq__link">
+                <img src="img/iconos/envio.png" alt="envio" class="faq__img">
+                <p class="faq__text">ENVÍOS GRATIS</p>
             </a>
-            <a href="#" class="main__faq__link">
-                <img src="img/iconos/pagoTarjeta.png" alt="pago tarjetas" class="main__faq__img">
+            <a href="#" class="faq__link">
+                <img src="img/iconos/pagoTarjeta.png" alt="pago tarjetas" class="faq__img">
+                <p class="faq__text">CUOTAS SIN INTERES</p>
             </a></img>
-            <a href="#" class="main__faq__link">
-                <img src="img/iconos/preguntasFrecuentes.png" alt="faq" class="main__faq__img">
+            <a href="#" class="faq__link">
+                <img src="img/iconos/preguntasFrecuentes.png" alt="faq" class="faq__img">
+                <p class="faq__text">PREGUNTAS FRECUENTES</p>
             </a>
         </section>
-        <section class="main__sale sale">
+        <section class="sale">
             <h2 class="sale__title">OFERTAS</h2>
-            <div class="cards">
-                <article class=" cards__card card">
-                    <img src="img/productos/auriculares/auriculares-inalambricos-1.jpg" alt="auriculares">
+
+            <div class="sale__cards">
+                <article class="card">
+                    <img class="card__img" src="img/productos/auriculares/auriculares-inalambricos-1.jpg"
+                        alt="auriculares">
                     <h2 class="card__title">Auriculares Inalambricos</h2>
                     <p class="card__price">$6000</p>
-                    <button class="card_button">comprar</button>
+                    <button class="card__button">COMPRAR</button>
                 </article>
                 <article class="card">
-                    <img src="img/productos/sacacorcho-auto/sacacorcho electrico 1.jpg" alt="sacacorcho">
+                    <img class="card__img" src="img/productos/sacacorcho-auto/sacacorcho electrico 1.jpg"
+                        alt="sacacorcho">
                     <h2 class="card__title">Saca Corcho Eléctrico</h2>
                     <p class="card__price">$2000</p>
-                    <button class="card_button">comprar</button>
+                    <button class="card__button">COMPRAR</button>
                 </article>
                 <article class="card">
-                    <img src="img/productos/tazaTermica/taza termica 1.jpg" alt="taza termica">
-                    <h2 class="card__title">Nombre producto</h2>
+                    <img class="card__img" src="img/productos/tazaTermica/taza termica 1.jpg" alt="taza termica">
+                    <h2 class="card__title">Vaso Térmico </h2>
                     <p class="card__price">$2200</p>
-                    <button class="card_button">comprar</button>
+                    <button class="card__button">COMPRAR</button>
                 </article>
                 <article class="card">
-                    <img src="img/productos/portaCepilloEsterilizador/porta cepillo 1.jpg"
+                    <img class="card__img" src="img/productos/portaCepilloEsterilizador/porta cepillo 1.jpg"
                         alt="porta cepillo de dientes esterilizador">
                     <h2 class="card__title">Porta Cepillos Esterilizador</h2>
                     <p class="card__price">$1800</p>
-                    <button class="card_button">comprar</button>
+                    <button class="card__button">COMPRAR</button>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="img/productos/portaCepilloEsterilizador/porta cepillo 1.jpg"
+                        alt="porta cepillo de dientes esterilizador">
+                    <h2 class="card__title">Porta Cepillos Esterilizador</h2>
+                    <p class="card__price">$1800</p>
+                    <button class="card__button">COMPRAR</button>
                 </article>
             </div>
         </section>
         <section class="bestSellers">
-            <h2 class="bestSellers__title">Mas Vendidos</h2>
-            <div class="cards">
-                <article class=" cards__card card">
-                    <img src="img/productos/ledColores/tira led 1.jpg" alt="tiras luz led">
+            <h2 class="bestSellers__title">MAS VENDIDOS</h2>
+            <div class="bestSellers__cards">
+                <article class="card">
+                    <img class="card__img" src="img/productos/ledColores/tira led 1.jpg" alt="tiras luz led">
                     <h2 class="card__title">Tira de Luz Led</h2>
                     <p class="card__price">$3200</p>
-                    <button class="card_button">comprar</button>
+                    <button class="card__button">COMPRAR</button>
                 </article>
                 <article class="card">
-                    <img src="img/productos/limpiadorFacial/limpiador facial 1.jpg" alt="Limpiador Facial">
+                    <img class="card__img" src="img/productos/limpiadorFacial/limpiador facial 1.jpg"
+                        alt="Limpiador Facial">
                     <h2 class="card__title">Limpiador Facial</h2>
                     <p class="card__price">$5500</p>
-                    <button class="card_button">comprar</button>
+                    <button class="card__button">COMPRAR</button>
                 </article>
                 <article class="card">
-                    <img src="img/productos/trapeadorSpray/trapeador dispen 1.jpg" alt="Trapeador Spray">
+                    <img class="card__img" src="img/productos/trapeadorSpray/trapeador dispen 1.jpg"
+                        alt="Trapeador Spray">
                     <h2 class="card__title">Trapeador Spray</h2>
                     <p class="card__price">$2500</p>
-                    <button class="card_button">comprar</button>
+                    <button class="card__button">COMPRAR</button>
                 </article>
                 <article class="card">
-                    <img src="img/productos/masajeador/masajeador 1.jpg" alt="Masajeador">
+                    <img class="card__img" src="img/productos/masajeador/masajeador 1.jpg" alt="Masajeador">
                     <h2 class="card__title">Masajeador Eléctrico</h2>
                     <p class="card__price">$10000</p>
-                    <button class="card_button">comprar</button>
+                    <button class="card__button">COMPRAR</button>
+                </article>
+                <article class="card">
+                    <img class="card__img" src="img/productos/masajeador/masajeador 1.jpg" alt="Masajeador">
+                    <h2 class="card__title">Masajeador Eléctrico</h2>
+                    <p class="card__price">$10000</p>
+                    <button class="card__button">COMPRAR</button>
                 </article>
             </div>
         </section>
@@ -145,12 +169,12 @@
 
     </main>
     <footer class="footer">
-        <div class="footer__logo logo">
-            <img src="img/logos/logo sin fondo para negro.png" alt="logo lo necesito" class="logo__img"><a
-                href="index.html" class="logo__link"></a></img>
+        <div class="footer__logo">
+            <img src="img/logos/logo sin fondo para negro.png" alt="logo lo necesito" class="footer__logo__img"><a
+                href="index.html" class="footer__logo__link"></a></img>
         </div>
-        <nav class="footer__nav nav">
-            <ul class="nav__items ">
+        <nav class="footer__nav">
+            <ul class="footer__nav__items">
                 <li class="nav__item">
                     <a href="landings/hogar.html" class="nav__link" target="_blank">HOGAR</a>
                 </li>
@@ -174,12 +198,12 @@
                 </li>
             </ul>
         </nav>
-        <section class="footer__contacts contacts">
+        <section class="footer__contacts">
             <div class="contacts__address">
                 <img src="img/iconos/mapa.png" alt="direccion" class="directionImg">
                 <p class="address">Calle falsa 123</p>
             </div>
-            <div class="footer__media media">
+            <div class="media">
                 <a href="https://www.facebook.com/" class="media__link">
                     <img src="img/iconos/facebook.png" alt="facebook" class="media__img">
                 </a>
@@ -191,7 +215,8 @@
                 </a>
             </div>
         </section>
-    </footer> -->
+    </footer>
+
 </body>
 
 

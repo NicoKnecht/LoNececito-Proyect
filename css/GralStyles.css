@@ -9,6 +9,16 @@
     /* border: red solid 1px; */
 }
 
+body {
+    background: rgb(91, 104, 218);
+    background: linear-gradient(
+        175deg,
+        rgba(91, 104, 218, 1) 2%,
+        rgba(159, 14, 213, 1) 59%,
+        rgba(221, 12, 117, 1) 100%
+    );
+}
+
 :root {
     --main-white: #f2f2f2;
     --main-blue: #5b68da;
