@@ -42,7 +42,7 @@
 .hero__buttons {
     display: flex;
     gap: 3rem;
-    margin: 3% 0%;
+    margin: 5% 0%;
 }
 .hero__button {
     background-color: white;
