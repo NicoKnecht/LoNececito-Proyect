@@ -44,6 +44,12 @@
     gap: 1%;
     width: 100%;
 }
+.contacts__address a {
+    color: black;
+}
+.contacts__address a:visited {
+    color: black;
+}
 .directionImg {
     width: 5%;
 }
