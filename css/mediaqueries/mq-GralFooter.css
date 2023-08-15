@@ -1,0 +1,35 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer__logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__logo__link {
+        width: 30%;
+    }
+    .copy {
+        padding: 1%;
+    }
+
+    .footer__contacts {
+        width: 100%;
+    }
+    .directionImg {
+        width: 7%;
+    }
+    .media__link {
+        display: block;
+        width: 8%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .copy {
+        font-size: 0.6rem;
+    }
+}

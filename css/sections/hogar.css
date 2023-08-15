@@ -1,0 +1,54 @@
+.heroLanding {
+    height: 50vh;
+    display: flex;
+    color: black;
+    display: flex;
+    background-image: url("../../img/banners/secciones/BANNER-HOGAR.png");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3%;
+    /* background-attachment: fixed; */
+}
+.heroLanding h1 {
+    font-size: 2%;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 1.3rem;
+    padding: 0.5rem;
+    margin: var(--gral-margin); /*cambiar mediaqueries*/
+}
+
+.gallery__card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    box-shadow: -2px 0px 14px 2px rgba(0, 0, 0, 0.54);
+    background-color: white;
+}
+
+.card__img {
+    max-width: 90%;
+    height: auto;
+}
+
+.card__title {
+    margin: 10px 0;
+}
+
+.card__price {
+    font-size: 1.2rem;
+}
+
+.card__button {
+    color: white;
+    background-color: black;
+    margin: 2rem 0rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 80%;
+    cursor: pointer;
+}

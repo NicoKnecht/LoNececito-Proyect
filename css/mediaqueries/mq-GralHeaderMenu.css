@@ -1,0 +1,107 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cart__dropDown {
+        top: 10vh; /*cuando se active la cruz, poner a cero*/
+    }
+    .navMain__item a {
+        font-size: 1.2vw;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .cart__dropDown {
+        top: 10vh; /*cuando se active la cruz, poner a cero*/
+    }
+    .dropDown__title {
+        font-size: 3vw;
+    }
+
+    .nav__hamburger {
+        display: block;
+        width: 3rem;
+        cursor: pointer;
+    }
+
+    .navHead__logoLink {
+        width: 8rem;
+    }
+    .nav__navHead {
+        flex-flow: wrap;
+    }
+    .navHead__search {
+        order: 5;
+        margin-left: 5%;
+        width: 70%;
+    }
+
+    .navHead__menuIcons {
+        width: 40%;
+    }
+
+    .nav__desktop {
+        display: none;
+    }
+
+    .nav__mobile {
+        position: absolute;
+        top: 9vh; /*cuando se active la cruz, poner a cero*/
+        left: 0;
+        width: 70%;
+        background-color: black;
+        height: 92vh;
+        z-index: 99;
+        text-align: center;
+        border-right: 1.5px solid var(--main-violet);
+        gap: 1.5%;
+        display: none;
+        overflow-y: scroll;
+        padding: 1%;
+        margin-top: 1%;
+    }
+    .nav__mobile::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navMain__item {
+        width: 95%;
+        border-top: white 1px solid;
+        border-bottom: white 1px solid;
+        padding: 2%;
+    }
+
+    .navMain__item a {
+        font-size: 3vw;
+    }
+    .nav__item--separate {
+        border: 1.5px solid white;
+        position: relative;
+        left: 0%;
+        top: 5%;
+    }
+    .nav__item--separate:hover {
+        animation: none;
+    }
+
+    .navMain__link {
+        color: white;
+        font-size: 1vw;
+        cursor: pointer;
+    }
+
+    .btn__add {
+        width: 70%;
+        padding: 2% 0%;
+        font-weight: 800;
+        font-size: 0.9rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .nav__mobile {
+        margin-top: 0%;
+        padding: 0%;
+    }
+    .cart__dropDown {
+        width: 35%;
+    }
+}

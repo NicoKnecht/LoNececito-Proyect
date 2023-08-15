@@ -3,24 +3,30 @@
     position: sticky;
     top: 0;
 }
-.header__wrapper {
+.nav {
+    background-color: var(--main-black);
+}
+.nav__navHead {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
 }
 
-.headerLogo__link {
+.navHead__logoLink {
     display: flex;
     width: 7rem;
+    padding: 0.5%;
 }
-.headerLogo__img {
+.navHead__logoImg {
     width: 100%;
     cursor: pointer;
 }
 
-.header__search {
-    width: 50%;
+.navHead__search {
+    margin-bottom: 1%;
+    width: 60%;
+    height: 5vh;
     border: 2px black solid;
     border-radius: 5px;
     font-size: 1rem;
@@ -28,39 +34,168 @@
     box-shadow: -1px 0px 12px 0px rgba(0, 0, 0, 0.45);
 }
 
-.header__menuIcons {
+.navHead__menuIcons {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    width: 35%;
+    width: 30%;
     padding: 0rem 1rem;
 }
 
-.menuIcons__link {
+.menuIcons__userLink {
     display: block;
-    width: 2.6rem;
+    width: 2.4rem;
     cursor: pointer;
 }
 
-.menuIcons__img {
+.menuIcons__userImg {
+    width: 100%;
+}
+.menuIcons__cart {
+    display: block;
+    width: 2.4rem;
+    cursor: pointer;
+}
+.cart__img {
     width: 100%;
 }
 
-/*HEADER nav*/
+#cart__toggle {
+    display: none;
+}
+/*carrito desplegable*/
 
-.nav {
-    background-color: var(--main-black);
+.cart__dropDown {
+    position: absolute;
+    top: 8vh; /*cuando se active la cruz, poner a cero*/
+    right: 0;
+    width: 25%;
+    background: linear-gradient(173deg, rgba(255, 255, 255, 1) 14%, rgba(176, 18, 235, 0.7399334733893557) 100%);
+    height: 93vh;
+    z-index: 99;
+    text-align: center;
+    border-left: 1.5px solid var(--main-violet);
+    gap: 1.5rem;
+    display: none;
+    overflow-y: scroll;
+    padding: 1%;
+}
+.cart__dropDown::-webkit-scrollbar {
+    display: none;
+}
+.cart__header {
+    display: flex;
+    justify-content: space-between;
 }
 
-.nav__wrapper {
+.dropDown__item {
+    margin: 0% 3%;
+    border: 1px solid var(--main-violet);
+    border-radius: 5px;
+    background-color: var(--main-white);
+}
+.dropDown__title {
+    padding-top: 2%;
+}
+.dropDown__item img {
+    width: 25%;
+    margin: 1%;
+}
+.dropDown__title {
+    background-color: white;
+    margin: 1%;
+}
+
+.item__title {
+    border-bottom: 1px solid var(--main-violet);
+    padding: 0.5px 0px;
+}
+.item__price {
+    display: block;
+    padding: 2% 0%;
+    border-bottom: 1px solid var(--main-violet);
+    font-weight: 600;
+}
+
+.item__handler {
+    padding: 2% 0%;
+    font-weight: 600;
+}
+
+.handler__quantity {
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid var(--main-black);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.divider {
+    margin-top: 3%;
+    border: 2px solid var(--main-violet);
+}
+
+.cart__total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    gap: 0.5rem;
+}
+.cart__total p {
+    font-size: 1.5rem;
+}
+.total__price {
+    font-size: 1.8rem;
+}
+.btn__add {
+    width: 60%;
+    padding: 2% 0%;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*cuando cart__toggle este en checked, cambia estilos de   y .cart*/
+#cart__toggle:checked + .cart__dropDown {
+    display: flex;
+    flex-direction: column;
+    animation: slide 1s ease 0s 1 normal both;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*close cart*/
+#close__toggle {
+    display: none;
+}
+
+/*nav*/
+
+.nav__navMain {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2%;
     padding: 0.6rem 0rem 0.6rem 0rem;
 }
-
-.nav__items {
+.nav__mobile {
+    display: none;
+}
+.navMain__item a:hover {
+    color: var(--main-fucsia);
 }
 
 .nav__item--separate {
@@ -94,8 +229,40 @@
         border: var(--main-violet) solid 2px;
     }
 }
-.nav__link {
+.navMain__link {
     color: white;
     font-size: 1vw;
     cursor: pointer;
+}
+
+#nav__toggle {
+    display: none;
+}
+
+.nav__hamburger {
+    display: none;
+    width: 3rem;
+    cursor: pointer;
+}
+.nav__hamburger img {
+    width: 100%;
+}
+
+#nav__toggle:checked + .nav__mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: slideMenu 1s ease 0s 1 normal both;
+}
+@keyframes slideMenu {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }

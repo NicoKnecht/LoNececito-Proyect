@@ -6,11 +6,350 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/GralStyles.css">
+    <link rel="stylesheet" href="../css/GralHeaderMenu.css">
+    <link rel="stylesheet" href="../css/GralFooter.css">
+    <link rel="stylesheet" href="../css/mediaqueries/mq-GralHeaderMenu.css">
+    <link rel="stylesheet" href="../css/mediaqueries/mq-GralFooter.css">
+    <link rel="stylesheet" href="../css/sections/sale.css">
     <title>Lo Necesito Ofertas</title>
 </head>
 
 <body>
+    <header class="header">
 
+        <nav class="header__nav nav">
+
+
+            <div class="nav__navHead navHead">
+
+                <!--Menu hamburguesa-->
+                <label class="nav__hamburger" for="nav__toggle">
+                    <img src="../img/iconos/menu.png" alt="icono menu">
+                </label>
+                <input type="checkbox" id="nav__toggle">
+                <ul class="nav__navMain nav__mobile">
+                    <li class="navMain__item">
+                        <a href="../landings/hogar.html" class="navMain__link">HOGAR</a>
+                    </li>
+                    <li class="navMain__item">
+                        <a href="../landings/cocina.html" class="navMain__link">COCINA</a>
+                    </li>
+                    <li class="navMain__item">
+                        <a href="../landings/electro.html" class="navMain__link">ELECTRO</a>
+                    </li>
+                    <li class="navMain__item">
+                        <a href="../landings/beauty.html" class="navMain__link">BEAUTY</a>
+                    </li>
+                    <li class="navMain__item">
+                        <a href="../landings/pasatiempos.html" class="navMain__link">PASATIEMPOS</a>
+                    </li>
+                    <li class="navMain__item">
+                        <a href="../landings/sale.html" class="navMain__link">OFERTAS</a>
+                    </li>
+                    <li class="navMain__item nav__item--separate">
+                        <a href="../landings/contact.html" class="navMain__link">CONTACTO</a>
+                    </li>
+                    <li class="navMain__item nav__item--separate">
+                        <a href="../landings/aboutUs.html" class="navMain__link">NOSOTROS</a>
+                    </li>
+                </ul>
+                <!--Menu hamburguesa-->
+
+
+                <a href="../index.html" class="navHead__logoLink"> <img src="../img/logos/LOGO-NEGRO.png"
+                        alt="logo lo necesito" class="navHead__logoImg">
+                </a>
+
+                <input class="navHead__search" type="text" id="search" name="search" placeholder="Buscar artículo"
+                    required>
+
+                <div class="navHead__menuIcons">
+                    <a href="../landings/login.html" class="menuIcons__userLink">
+                        <img src="../img/iconos/user.png" alt="usuario" class="menuIcons__userImg">
+                    </a>
+
+                    <label for="cart__toggle" class="menuIcons__cart cart">
+                        <img src="../img/iconos/carrito-de-compras.png" alt="carrito" class="cart__img">
+                    </label>
+                    <input type="checkbox" id="cart__toggle">
+
+                    <div class="cart__dropDown">
+                        <div class="dropDown__header">
+                            <h2 class="dropDown__title">CARRITO</h2>
+                            <!-- <img src="img/iconos/cerrar.png" alt="icono cruz"> 
+                            para cuando use js-->
+                        </div>
+                        <div class="dropDown__item item">
+                            <img src="../img/productos/masajeador/masajeador 1.jpg" class="item__img" alt="masajeador">
+                            <div class="item__info">
+                                <h3 class="item__title">Masajeador</h3>
+
+                                <span class="item__price">$10000</span>
+                            </div>
+                            <div class="item__handler">
+                                <span class="handler__quantity down"> - </span>
+                                <span class="item__quantity"> 1 </span>
+                                <span class="handler__quantity up"> + </span>
+                            </div>
+                        </div>
+                        <div class="dropDown__item item">
+                            <img src="../img/productos/prensaFrancesa/prensa farncesa sin fondo.png" class="item__img"
+                                alt="prensa francesa">
+                            <div class="item__info">
+                                <h3 class="item__title">Prensa francesa</h3>
+
+                                <span class="item__price">$8000</span>
+                            </div>
+                            <div class="item__handler">
+                                <span class="handler__quantity down"> - </span>
+                                <span class="item__quantity"> 1 </span>
+                                <span class="handler__quantity up"> + </span>
+                            </div>
+                        </div>
+                        <div class="dropDown__item item">
+                            <img src="../img/productos/espumadorLeche/espumador-1.jpg" class="item__img"
+                                alt="prensa francesa">
+                            <div class="item__info">
+                                <h3 class="item__title">Espumador</h3>
+
+                                <span class="item__price">$5000</span>
+                            </div>
+                            <div class="item__handler">
+                                <span class="handler__quantity down"> - </span>
+                                <span class="item__quantity"> 1 </span>
+                                <span class="handler__quantity up"> + </span>
+                            </div>
+                        </div>
+                        <div class="dropDown__item item">
+                            <img src="../img/productos/ledColores/tira led 1.jpg" class="item__img"
+                                alt="prensa francesa">
+                            <div class="item__info">
+                                <h3 class="item__title">Tira Led</h3>
+
+                                <span class="item__price">$6000</span>
+                            </div>
+                            <div class="item__handler">
+                                <span class="handler__quantity down"> - </span>
+                                <span class="item__quantity"> 1 </span>
+                                <span class="handler__quantity up"> + </span>
+                            </div>
+                        </div>
+
+                        <span class="divider"></span>
+
+                        <div class="cart__total">
+                            <p>Total:</p>
+                            <span class="total__price">$29000</span>
+                            <button class="btn__add">COMPRAR</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+            <ul class="nav__navMain nav__desktop">
+                <li class="navMain__item">
+                    <a href="../landings/hogar.html" class="navMain__link">HOGAR</a>
+                </li>
+                <li class="navMain__item">
+                    <a href="../landings/cocina.html" class="navMain__link">COCINA</a>
+                </li>
+                <li class="navMain__item">
+                    <a href="../landings/electro.html" class="navMain__link">ELECTRO</a>
+                </li>
+                <li class="navMain__item">
+                    <a href="../landings/beauty.html" class="navMain__link">BEAUTY</a>
+                </li>
+                <li class="navMain__item">
+                    <a href="../landings/pasatiempos.html" class="navMain__link">PASATIEMPOS</a>
+                </li>
+                <li class="navMain__item">
+                    <a href="../landings/sale.html" class="navMain__link">OFERTAS</a>
+                </li>
+                <li class="navMain__item nav__item--separate">
+                    <a href="../landings/contact.html" class="navMain__link">CONTACTO</a>
+                </li>
+                <li class="navMain__item nav__item--separate">
+                    <a href="../landings/aboutUs.html" class="navMain__link">NOSOTROS</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section class="heroLanding">
+            <div class="heroTitle">
+                <h1 class="title">BEAUTY</h1>
+
+            </div>
+        </section>
+        <div class="gallery">
+            <!--1-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/auriculares/auriculares-inalambricos-3.jpg"
+                    alt="auriculares inalambricos">
+                <h2 class="card__title">Auriculares Inalambricos</h2>
+                <p class="card__price">$6000</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--2-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/espumadorLeche/espumador-1.jpg" alt="espumador de leche">
+                <h2 class="card__title">Espumador de Leche</h2>
+                <p class="card__price">$2000</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--3-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/humidificador( sacar logos!!)/humificador-luna-1.jpg"
+                    alt="humificador">
+                <h2 class="card__title">Humificador</h2>
+                <p class="card__price">$6000</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--4-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/ledColores/tira led 2.jpg" alt="led colores">
+                <h2 class="card__title">Led RGB</h2>
+                <p class="card__price">$3200</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--5-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/licuadoraPortatil/licuadora portatil 2.jpg"
+                    alt="licuadora portatil">
+                <h2 class="card__title">Licuadora Portatil</h2>
+                <p class="card__price">$7000</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--6-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/limpiadorFacial/limpiador facial 1.jpg"
+                    alt="limpiador facial">
+                <h2 class="card__title">Limpiador Facial</h2>
+                <p class="card__price">$5500</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--7-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/mandolina/mandolina 1.jpg" alt="limpiador facial">
+                <h2 class="card__title">Mandolina</h2>
+                <p class="card__price">$4000</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--8-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/masajeador/masajeador 1.jpg" alt="Masajeador">
+                <h2 class="card__title">Masajeado</h2>
+                <p class="card__price">$10000</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--9-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/portaCepilloEsterilizador/porta cepillo 1.jpg"
+                    alt="porta ceillo">
+                <h2 class="card__title">Porta Cepillo</h2>
+                <p class="card__price">$1800</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--10-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/prensaFrancesa/prensa francesa 3.jpg"
+                    alt="Prensa Francesa">
+                <h2 class="card__title">Prensa Francesa</h2>
+                <p class="card__price">$4500</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--11-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/proyector-led/proyector led 1.jpg" alt="proyector led">
+                <h2 class="card__title">Proyector Led</h2>
+                <p class="card__price">$4000</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--12-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/puntosNegros/saca puntos negros 1.jpg"
+                    alt="saca puntos negros">
+                <h2 class="card__title">Limpiador Puntos Negros</h2>
+                <p class="card__price">$5800</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--13-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/sacacorcho-auto/sacacorcho electrico 1.jpg"
+                    alt="saca corcho">
+                <h2 class="card__title">Saca Corcho Eléctrico</h2>
+                <p class="card__price">$2000</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--14-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/sacaPelusa/saca pelusa 2.jpg" alt="saca pelusa">
+                <h2 class="card__title">Saca Pelusa</h2>
+                <p class="card__price">$2000</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--15-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/sellador-bolsas/sellador de bolsas 1.jpg"
+                    alt="sellador de bolsas">
+                <h2 class="card__title">Sellador de Bolsas</h2>
+                <p class="card__price">$3000</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--16-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/soporteNotebook/soporte notebook 1.jpg"
+                    alt="saca puntos negros">
+                <h2 class="card__title">Soporte de Notebook</h2>
+                <p class="card__price">$5800</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+            <!--17-->
+            <a href="../landings/product.html" class="gallery__card card">
+                <img class="card__img" src="../img/productos/trapeadorSpray/trapeador dispen 1.jpg"
+                    alt="trapeador spray">
+                <h2 class="card__title">Trapeador Spray</h2>
+                <p class="card__price">$10000</p>
+                <button class="card__button">COMPRAR</button>
+            </a>
+
+        </div>
+
+    </main>
+    <footer class="footer">
+
+        <div class="footer__logo">
+            <a href="../index.html" class="footer__logo__link">
+                <img src="../img/logos/LOGO-NEGRO.png" alt="logo lo necesito" class="footer__logo__img">
+            </a>
+            <p class="copy">Copyright Lo Necesito - 2023. Todos los derechos reservados</p>
+        </div>
+
+        <section class="footer__contacts">
+            <div class="contacts__address">
+                <img src="../img/iconos/mapa.png" alt="direccion" class="directionImg">
+                <a href="https://goo.gl/maps/8Py4hb5HfZgTe2WVA" target="_blank" class="address ">Calle falsa 123</a>
+            </div>
+            <div class="media">
+                <a href="https://www.facebook.com/" class="media__link">
+                    <img src="../img/iconos/facebook.png" alt="facebook" class="media__img">
+                </a>
+                <a href="https://www.instagram.com/" class="media__link">
+                    <img src="../img/iconos/instagram.png" alt="" class="media__img">
+                </a>
+                <a href="https://www.youtube.com/" class="media__link">
+                    <img src="../img/iconos/youtube.png" alt="" class="media__img">
+                </a>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>

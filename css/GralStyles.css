@@ -8,18 +8,19 @@
     font-family: "roboto", sans-serif;
     /* border: red solid 1px; */
 }
-
+html {
+    position: relative;
+    min-height: 100vh;
+}
 body {
-    background: rgb(91, 104, 218);
-    background: linear-gradient(
-        175deg,
-        rgba(91, 104, 218, 1) 2%,
-        rgba(159, 14, 213, 1) 59%,
-        rgba(221, 12, 117, 1) 100%
-    );
+    background: linear-gradient(175deg, rgba(0, 0, 0, 10) 1%, rgba(159, 14, 213, 1) 60%, rgba(221, 12, 117, 1) 100%);
 }
 
 :root {
+    --gral-padding: 1% 10% 1% 10%;
+    --mobile-padding: 1% 2% 1% 2%;
+    --gral-margin: 0% 5% 0% 5%;
+
     --main-white: #f2f2f2;
     --main-blue: #5b68da;
     --main-fucsia: #dd0c75;

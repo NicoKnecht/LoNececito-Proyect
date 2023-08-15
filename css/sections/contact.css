@@ -1,0 +1,119 @@
+.main {
+    padding: var(--gral-padding);
+    margin-top: 2%;
+    display: flex;
+    min-height: 72vh;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    color: #f6f2f5;
+    text-align: center;
+    margin-bottom: 2%;
+    flex-grow: 1;
+}
+
+.panel h2 {
+    color: #f6f2f5;
+    margin: 3% 0%;
+    font-size: 2rem;
+    background: linear-gradient(
+        180deg,
+        rgba(168, 0, 112, 0.5662640056022409) 20%,
+        rgba(242, 34, 173, 0.1516981792717087) 67%
+    );
+}
+
+.contact__form {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.redes__link {
+    display: flex;
+    color: #f6f2f5;
+    padding: 2% 0%;
+}
+
+.redes__logo {
+    display: flex;
+    width: 28%;
+}
+.redes__logo img {
+    width: 100%;
+}
+
+.redes__name {
+    color: #f6f2f5;
+    display: flex;
+    align-items: center;
+    padding: 0% 2%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.formorm .inputsBoxes {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0%;
+}
+
+.input__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+
+.input__wrapper .input {
+    display: inline-block;
+    width: 48%;
+    padding: 2%;
+}
+
+.input__area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.area__title {
+    margin-bottom: 2%;
+}
+
+.textarea {
+    width: 100%;
+    min-height: 25vh;
+    flex-grow: 1;
+}
+
+.buttonSub a {
+    display: block;
+    padding: 2%;
+    width: 100%;
+    color: #f6f2f5;
+    font-weight: 600;
+}
+
+.buttonSub .btn {
+    margin-top: 2%;
+    background-color: var(--main-fucsia);
+    width: 20%;
+}
+
+.btn:hover {
+    box-shadow: -1px 3px 10px 2px black;
+}

@@ -1,0 +1,51 @@
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+    .panel h2 {
+        font-size: 5vw;
+        margin-bottom: 10%;
+    }
+    .contact__form {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+    .redes {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .redes__link {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes__logo {
+        width: 45%;
+    }
+
+    .redes__name {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+        flex-grow: 1;
+    }
+    .buttonSub .btn {
+        background-color: #d2008d;
+        width: 20%;
+        margin: 2% 0%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        padding: var(--mobile-padding);
+    }
+    .panel h2 {
+        font-size: 6vw;
+    }
+}

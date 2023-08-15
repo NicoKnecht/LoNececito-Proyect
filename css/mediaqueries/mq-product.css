@@ -1,0 +1,20 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    .product__wrapper {
+        flex-direction: column;
+    }
+
+    .product__image {
+        width: 100%;
+    }
+
+    .product__info {
+        width: 100%;
+    }
+    .product__title {
+        font-size: 1.8rem;
+    }
+
+    .product__description {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,16 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero__info {
+        width: 100%;
+        padding-right: 2%;
+    }
+    .hero__img {
+        width: 100%;
+    }
+    .hero__img img {
+        width: 80%;
+    }
+}
