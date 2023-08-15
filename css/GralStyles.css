@@ -8,6 +8,10 @@
     font-family: "roboto", sans-serif;
     /* border: red solid 1px; */
 }
+a:visited {
+    text-decoration: none;
+    color: white;
+}
 html {
     position: relative;
     min-height: 100vh;
